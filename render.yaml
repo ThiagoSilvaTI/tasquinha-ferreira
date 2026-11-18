@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: tasquinha-ferreiro
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /
+    envVars:
+      - key: TZ
+        value: America/Sao_Paulo
